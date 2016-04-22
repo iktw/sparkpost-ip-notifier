@@ -6,7 +6,7 @@ Package to notify you by email when your External IP has changed.
 
 ## Usage
 ```
-from sparkpostipnotifier import SparkPostIPNotifier
+from sparkpostipnotifier.notifier import SparkPostIPNotifier
 
 IPN = SparkPostIPNotifier(
     sparkpost_api_key='mysparkpost-api-key',
