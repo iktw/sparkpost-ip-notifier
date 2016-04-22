@@ -69,7 +69,7 @@ class SparkPostIPNotifier:
         return ip
 
     def send_notification(self):
-        text = 'New IP-address is {}.\nOld IP-address was {}'.format(self.fetched_ip, self.current_ip)
+        text = 'New IP-address: {}.\nOld IP-address: {}'.format(self.fetched_ip, self.current_ip)
         r = self.sparkpost.transmission.send(subject=self.subject, from_email=self.from_email, text=text, recipients=self.recipients)
         return r
 
